@@ -9,7 +9,7 @@ const BottomResultBox = ({ averageReadTime, longestWord }: BottomResultBoxProps)
   const bottomResultBar = [
     {
       title: 'Average Reading Time:',
-      value: averageReadTime > 0 ? `${averageReadTime} minute(s)` : '-',
+      value: averageReadTime > 0 ? `~${averageReadTime} minute(s)` : '-',
     },
     {
       title: 'Longest word:',

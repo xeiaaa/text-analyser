@@ -6,7 +6,7 @@ interface TextAreaProps {
 
 const TextArea = ({ setText }: TextAreaProps) => {
   const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-    setText(e.target.value.trim())
+    setText(e.target.value)
   }
   return (
     <textarea className="text-area" placeholder="Paste your text here..." onChange={handleChange} />
